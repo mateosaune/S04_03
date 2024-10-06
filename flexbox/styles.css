@@ -1,0 +1,80 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+ 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ 
+.container {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+ 
+.carrousel {
+    /* border: 1px solid green; */
+}
+ 
+.carrousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.carrousel-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+}
+ 
+.carrousel-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.card {
+    width: 200px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    padding: 10px;
+    border: 1px solid;
+}
+ 
+ 
+.btn {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.btn-left, .btn-right {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+ 
+.button-action {
+    width: 100%;
+}
+ 
+.btn-primary {
+    width: inherit;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+ 
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ 
+.container {
+    height: inherit;
+    width: inherit;
+    border: 1px solid;
+}
+ 
+.container-items {
+    border: 1px solid red;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(5,100px);
+    gap: 5px 50px; /* Fila , columna */
+    justify-content: center;
+    align-content: center;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+ 
+ 
+/* Grid area */
+ 
+.item-a {
+    grid-area: header;
+    border: 1px solid;
+}
+ 
+.item-b {
+    grid-area: main;
+    border: 1px solid;
+}
+ 
+.item-c {
+    grid-area: carrousel;
+    border: 1px solid;
+}
+ 
+.item-d {
+    grid-area: footer;
+    border: 1px solid;
+}
+ 
+.Box {
+    border: 1px solid red;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main . carrousel"
+        "footer footer footer footer";
+    justify-content: center;
+}
